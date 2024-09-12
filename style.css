@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    background-image: url(bg.png);
+    background-size: cover;
+}
+
+.scoreDisplay {
+    width: 250px;
+    height: 100px;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    color:white;
+    font-size: 15px;
+    font-weight: 650;
+}
+.planet {
+    height: 256px;
+    width: 256px;
+    margin-top: 25px;
+    overflow: hidden;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.1s ease-in-out;   
+}
+
+.planet:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.planet:active {
+    transform: scale(0.975);
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+
+.buildings {
+    padding: 3px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    margin-right: 25px;
+    width: 150px;
+    height: 600px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    margin-top: 100px;
+}
+
+.Moon, .Mars, .Mercury, .Neptune, .Venus, .Uranus, 
+.Jupiter, .Sun {
+    border-radius: 5px;
+    width: 125px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    color: white;
+    background: rgba(255, 255, 255, 0.3);
+
+}
+.Moon,.Mars, .Mercury, .Neptune, .Venus, .Uranus, 
+.Jupiter, .Sun:hover{
+    cursor:pointer;
+}
+
+.utilBtns {
+    bottom: 10px;
+    display: none;
+}
+
+#notifiction {
+    display: none;
+}
+
+.Moon {
+    margin-top: 40%;
+}
+
+.noti {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
+
+.storeUtils button {
+    width: 25px;
+    height: 25px;
+    color: white;
+    font-size: 10px;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+}
+
+.storeUtils button:hover {
+    cursor: pointer;
+}

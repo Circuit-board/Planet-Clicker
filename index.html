@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div class="wrapper">
+        <div class='left'>
+            <div class='scoreDisplay'>
+                <p><span id='score'>0</span> Earths</p>
+                <p><span id='cps'>0</span> Cps</p>
+                <p><span id='clickPower'>1</span> ClickPower</p>
+            </div>
+
+            <img src="planet.png" onclick="Game.clickPlanet(Game.clickPower)" class="planet">
+        </div>
+        <div class='right'>
+            <div class='buildings'>
+                <div class="storeUtils">
+                    <button onclick="Game.changeBuyMode(1)">Buy</button>
+                    <button onclick="Game.changeBuyMode(0)">Sell</button>
+                    <button onclick="Game.changeBuyAmount(1)">1</button>
+                    <button onclick="Game.changeBuyAmount(10)">10</button>
+                    <button onclick="Game.changeBuyAmount(100)">100</button>
+                </div>
+                <button onclick="Game.Objects['Moon'].buy(Game.buyAmount)" class="Moon">
+                    <p id='name'>Moon</p>
+                    <p id='moonPrice'>10</p>
+                    <p id='owned'><span id='moonsOwned'>0</span> Owned</p>
+                </button>
+                <button onclick="Game.Objects['Mars'].buy(Game.buyAmount)" class="Mars">
+                    <p id='name'>Mars</p>
+                    <p id='marsPrice'>100</p>
+                    <p id='owned'><span id='marsOwned'>0</span> Owned</p>
+                </button>
+                <button onclick="Game.Objects['Mercury'].buy(Game.buyAmount)" class="Mercury">
+                    <p id='name'>Mercury</p>
+                    <p id='mercuryPrice'>1.00 Thousand</p>
+                    <p id='owned'><span id='mercuryOwned'>0</span> Owned</p>
+                </button>
+                <button onclick="Game.Objects['Neptune'].buy(Game.buyAmount)" class='Neptune'>
+                    <p id='name'>Neptune</p>
+                    <p id='neptunePrice'>15.00 Thousand</p>
+                    <p id='owned'><span id='neptuneOwned'>0</span> Owned</p>
+                </button>
+                <button onclick="Game.Objects['Venus'].buy(Game.buyAmount)" class='Venus'>
+                    <p id='name'>Venus</p>
+                    <p id='venusPrice'>150.00 Thousand</p>
+                    <p id='owned'><span id='venusOwned'>0</span> Owned</p>
+                </button>
+                <button onclick="Game.Objects['Uranus'].buy(Game.buyAmount)" class='Uranus'>
+                    <p id='name'>Uranus</p>
+                    <p id='uranusPrice'>1.50 Million</p>
+                    <p id='owned'><span id='uranusOwned'>0</span> Owned</p>
+                </button>
+                <button onclick="Game.Objects['Jupiter'].buy(Game.buyAmount)" class='Jupiter'>
+                    <p id='name'>Jupiter</p>
+                    <p id='jupiterPrice'>15.00 Million</p>
+                    <p id='owned'><span id='jupiterOwned'>0</span> Owned</p>
+                </button>
+                <button onclick="Game.Objects['Sun'].buy(Game.buyAmount)" class='Sun'>
+                    <p id='name'>Sun</p>
+                    <p id='sunPrice'>75.00 Million</p>
+                    <p id='owned'><span id='sunOwned'>0</span> Owned</p>
+                </button>
+            </div>
+            <div class='utilBtns'>
+                <button onclick='Game.save()'>Save</button>
+                <button onclick='Game.load()'>load</button>
+            </div>
+        </div>
+        <div id="notification">
+            <p id="notification"></p>
+        </div>
+    </div>
+</body>
+</html>
