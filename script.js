@@ -195,7 +195,11 @@ Game.shortenNumber = function (num) {
 
 	const numFormatters = [formatEveryThirdPower(formatLong), rawFormatter];
 
-	return parseInt(numFormatters[0](num));
+	if (num >= 1e6) {
+		return numFormatters[0](num);
+	} else {
+		return parseInt(numFormatters[0](num));
+	}
 };
 
 Game.win = function (what) {
