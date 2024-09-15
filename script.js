@@ -195,7 +195,7 @@ Game.shortenNumber = function (num) {
 
 	const numFormatters = [formatEveryThirdPower(formatLong), rawFormatter];
 
-	return parseFloat(numFormatters[0](num)).toFixed(0).toString();
+	return parseInt(numFormatters[0](num));
 };
 
 Game.win = function (what) {
