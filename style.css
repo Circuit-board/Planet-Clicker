@@ -28,13 +28,8 @@ body {
     transition: all 0.1s ease-in-out;   
 }
 
-.planet:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-}
-.planet:active {
-    transform: scale(0.975);
-}
+.planet:hover {cursor: pointer;transform: scale(1.05);}
+.planet:active {transform: scale(0.975);}
 .right {
     float: right;
 }
@@ -54,7 +49,7 @@ body {
     margin-top: 100px;
 }
 
-.Moon, .Mars, .Mercury, .Neptune, .Venus, .Uranus, 
+.Saturn, .Mars, .Mercury, .Neptune, .Venus, .Uranus, 
 .Jupiter, .Sun {
     border-radius: 5px;
     width: 125px;
@@ -64,10 +59,7 @@ body {
     background: rgba(255, 255, 255, 0.3);
 
 }
-.Moon,.Mars, .Mercury, .Neptune, .Venus, .Uranus, 
-.Jupiter, .Sun:hover{
-    cursor:pointer;
-}
+.Saturn,.Mars, .Mercury, .Neptune, .Venus, .Uranus, .Jupiter, .Sun:hover{cursor:pointer;}
 
 .utilBtns {
     bottom: 10px;
@@ -100,6 +92,4 @@ body {
     border-radius: 5px;
 }
 
-.storeUtils button:hover {
-    cursor: pointer;
-}
+.storeUtils button:hover {cursor: pointer;}
